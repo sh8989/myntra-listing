@@ -1,0 +1,433 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+body{
+	font-family: "Roboto", sans-serif;
+}
+/*header section css start */
+header{
+	width: 100%;
+	padding: 0px 25px;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 2px 5px 0px gray;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0px;
+	z-index: 999;
+
+}
+.logo img{
+	width: 75%;
+	height: 60%;
+	padding-left: 5px;
+}
+.menu{
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-evenly;
+	flex-basis: 35%;
+	font-weight: 600;
+	font-size: 13px;
+	position: relative;	
+}
+.ankor1{
+	padding: 30px 15px;
+	box-sizing: border-box;	
+}
+.ankor1 a{
+	color: black;
+	text-decoration: none;
+}
+.submenu{
+	width: 1300px;
+	background-color: white;
+	display: flex;
+	position: absolute;
+	top: 80px;
+	left: -80px;
+	opacity: 0;
+	visibility: hidden;
+}
+.ankor1:hover .submenu{
+	opacity: 1;
+	visibility: visible;
+}
+.ankor1:hover{
+	border-bottom: 5px solid #EE5F73;
+}
+.submenucol{
+	flex-basis: 20%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.submenucol h6{
+	font-size: 15px;
+	color: #EE5F73;
+	padding: 5px 0px;
+}
+.submenucol ul{
+	list-style: none;
+	padding: 5px 0px 15px 0px;
+	border-bottom: 0.5px solid gray;
+}
+.submenucol ul li{
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.ankor a{
+	color: black;
+}
+.search{
+	flex-basis: 32%;
+	display: flex;
+	align-items: center;
+	background-color: #F5F5F6;
+	border: 1px solid #c7c7d3;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+.search svg{
+	background-color: #F5F5F6;
+
+}
+.search input{
+	width: 100%;
+	padding: 5px 0px;
+	background-color:#F5F5F6;
+	text-decoration: none;
+	outline: none;
+	padding-left: 10px;
+	border: 0px;
+
+
+}
+.searchicon{
+	font-size: 15px;
+	padding: 0px 5px;
+}
+.icon{
+	flex-basis: 15%;
+	display: flex; 
+	justify-content: space-evenly;
+	box-sizing: border-box;
+	padding-right: 20px;
+
+}
+.colum{
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	font-weight: 500;
+
+}
+.icon svg{
+	font-size: 20px;
+	font-weight: 400;
+}
+/*header seaction css end */
+/*row1 section start */
+
+.row1mt{
+	width: 100%;
+	padding: 20px 25px;
+	box-sizing: border-box;
+}
+.row1mt p{
+	font-size: 14px;
+	font-weight: 300;
+}
+.row1mt b{
+	font-size: 14px;
+	font-weight: 500;
+}
+/*row1 section end */
+/*row2 css section start  */
+
+.row2mt{
+	width: 100%;
+	padding:  0px 25px;
+	box-sizing: border-box;
+}
+.row2mt p{
+	font-size: 15px;
+	font-weight: 400;
+	color: #878B94;
+}
+.row2mt b{
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
+}
+/*row2 css section end */
+/*row3 css section start */
+
+.row3mt{
+	width: 100%;
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	padding: 13px 26px;
+	box-sizing: border-box;
+}
+.row3mtc1{
+	font-size: 15px;
+	font-weight: 500;
+	flex-basis: 16%;
+}
+.row3mtc2{
+	flex-basis: 56%;
+	display: flex;
+	gap: 20px;
+}
+.row3mtc2 select{
+	font-size: 14px;
+	font-weight: 200;
+    border: none;
+}
+.row3mtc3 select{
+	padding: 10px;
+	padding-right: 47px;
+	font-size: 15px;
+	font-weight: 400;
+
+
+}
+/*row3 css secction end */
+/*row4 css section start */
+
+.row4mt{
+	display: grid;
+}
+/*row4 css section end */
+/*row5 css section start */
+
+.row5mt{
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+.row5mtc1{
+	border: 1px solid  black;
+}
+.row5mtc1cell{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	max-height: 200px;
+}
+.row5mtc1cellpd{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 15px;
+	box-sizing: border-box;
+	max-height: 200px;
+}
+.row5mtc1cell::-webkit-scrollbar{
+	width: 6px;
+}
+.row5mtc1cell::-webkit-scrollbar-thumb{
+	border: 1px solid #f1f1f1;
+	background-color: #f31db5;
+	border-radius: 5px;
+}
+.row5mtc1cell h4{
+	font-size: 20px;
+	font-weight: 400;
+}
+.row5mtc1cell>p{
+	font-size: 15px;
+	font-weight: 400;
+	color: #FF3F6C;
+	margin-left: 35px;
+}
+.input{
+	padding: 10px 0;
+	display: flex;
+
+	
+}
+.input >input{
+	width: 20px;
+	height: 15px;
+	cursor: pointer;
+}
+.labw{
+	width: 100%;
+	font-size: 15px;
+	cursor: pointer;
+}
+.input>span{
+	color: #878B94;
+}
+
+.space{
+	margin-right: 10px;
+}
+.row5mtc2{
+	border: 1px solid  black;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	max-height: 948px;
+}
+.row5mtc2::-webkit-scrollbar{
+	width: 0;
+}
+.row5mtc2{
+	display: grid;
+	grid-template-columns: auto auto auto auto	;
+	gap: 30px;	
+}
+.row5mtc2img{
+	padding: 15px 15px 0px 15px;
+	box-sizing: border-box;
+} 
+.row5mtc2img img{
+	width: 100%;
+}
+.row5mtc2img>h5{
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.row5mtc2img>p{
+	padding: 10px;
+}
+
+.main-about{
+	width: 100%;
+	display: flex;
+	padding-top: 70px;
+}
+.about  {
+	padding-left: 220px;
+	
+	color: gray;
+	
+}
+.about h6{
+	padding: 20px 0px;
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.about ul li{
+	padding-top: 10px;
+	font-size: 14px;
+}
+.services{
+	padding-left: 30px;
+	color: gray;
+}
+.services h6{
+	padding: 20px 0px;
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+
+}
+.services ul li{
+	padding-top: 10px;
+	font-size: 14px;
+}
+.experience{
+padding-left: 60px;
+
+}
+.experience  h6{
+
+	padding: 20px 0px;
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.google-img{
+	display: flex;
+	margin-top: 10px;
+}
+.png{
+	padding-right: 10px;
+
+}
+.keep{
+	margin-top:10px ;
+}
+.social-media{
+	display: flex;
+}
+.social-media svg{
+	padding-right: 10px ;
+	font-size: 25px;
+	color: gray;
+}
+.icon-a{
+	display: flex;
+	color: gray;
+	font-size: 15px;
+}
+.main-icon-a{
+	padding-left: 100px;
+	padding-top: 20px;
+}
+.icon-b{
+	display: flex;
+	color: gray;
+	font-size: 15px;
+	padding-top: 30px;
+}
+strong{
+	color: black;
+}
+.fashion{
+	padding-left: 220px;
+	padding-top: 30px;
+	padding-right: 220px;
+}
+.fashion p{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: gray;
+	font-size: 15px;
+}
+.main-content{
+	display: flex;
+	font-size: 18px;
+	justify-content: space-between;
+}
+
+.men-shopping{
+	padding-left: 220px;
+	padding-right: 220px;
+	
+}
+.men-shopping h5{
+	padding-bottom: 10px;
+}
+.men-shopping p{
+	color: gray;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.shopping-option{
+	padding-left: 30px;
+	color: gray;
+
+}
+.shopping-option ol li{
+	list-style: A;
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+.load{
+	margin: auto;
+	display: flex;
+	gap: 20px;
+}
